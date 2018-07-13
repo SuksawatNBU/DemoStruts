@@ -12,7 +12,7 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.util.ValueStack;
 
 import manager.authentication.AuthenManager;
-import bean.User;
+import model.User;
 
 public class AuthenAction extends ActionSupport implements SessionAware {
 	

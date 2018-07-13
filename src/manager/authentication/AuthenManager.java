@@ -7,7 +7,7 @@
  */
 package manager.authentication;
 
-import bean.User;
+import model.User;
 import service.authentication.AuthenService;
 
 public class AuthenManager {

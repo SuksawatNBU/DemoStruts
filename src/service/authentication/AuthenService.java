@@ -2,7 +2,7 @@
 package service.authentication;
 
 import dao.authentication.AuthenDao;
-import bean.User;
+import model.User;
 
 public class AuthenService {
 	

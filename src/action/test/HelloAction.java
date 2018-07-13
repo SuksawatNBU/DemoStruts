@@ -3,7 +3,7 @@ package action.test;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 
-import bean.User;
+import model.User;
 
 public class HelloAction extends ActionSupport implements ModelDriven<User> {
 

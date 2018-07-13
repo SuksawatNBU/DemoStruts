@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import connection.ConnectJDBC;
-import bean.User;
+import model.User;
 
 public class AuthenDao {
 	
