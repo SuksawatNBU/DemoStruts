@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN" "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.action.extension" value="action" />
+	<constant name="struts.ui.theme" value="simple" />
+	<constant name="struts.i18n.reload" value="false" />
+	<constant name="struts.configuration.xml.reload" value="false" />
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
+	
+    <package name="page" extends="struts-default">
+    	<action name="page-home">
+            <result>wellcome.jsp</result>
+        </action>
+		<action name="page-login">
+            <result>jsp/security/login.jsp</result>
+        </action>
+        <action name="page-register">
+            <result>jsp/security/register.jsp</result>
+        </action>
+        
+        <action name="helloAction" class="action.test.HelloAction" method="execute">
+            <result name="success">jsp/security/login.jsp</result>
+            <result name="error">wellcome.jsp</result>
+        </action>
+    </package>
+    
+    <package name="user" namespace="/jsp/user" extends="struts-default">
+    </package>
+    
+    <include file="resource/struts/struts-authentication.xml" />
+</struts>
