@@ -5,9 +5,9 @@
 		
     <package name="page" extends="struts-default">
     
-    	<!-- <interceptors>
+    	<interceptors>
 			<interceptor name = "myinterceptor" class = "action.test.MyInterceptor" />
-		</interceptors> -->
+		</interceptors>
 		
 		<!-- Link Page -->
     	<action name="page-home">
@@ -22,7 +22,7 @@
         
         <action name="helloAction" class="action.test.HelloAction" method="execute">
         	<interceptor-ref name = "params"/>
-         	<!-- <interceptor-ref name = "myinterceptor" /> -->
+         	<interceptor-ref name = "myinterceptor" />
             <result name="success" type = "redirect">
             	<param name = "location">/wellcome.jsp</param>
             </result>
