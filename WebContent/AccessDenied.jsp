@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
+	<title>Struts</title>
 </head>
 <body>
-	Hello World, <s:property value = "name"/>
+	You are not authorized to view this page.
 </body>
 </html>

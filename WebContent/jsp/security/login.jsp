@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE html>
 <html>
@@ -8,17 +8,18 @@
 </head>
 <body>
 	
-	<s:form class="form-signin" action="signIn" method="post" namespace="/">
-      	<div class="text-center mb-4">
-        	<img class="mb-4" src="resources/img/Struts.png" alt="" width="256" height="86">
-        	<h2 class="h3 mb-3 font-weight-normal">Struts</h2>
-        	<p>Apache Struts is a free, open-source, <code> MVC framework </code> for creating elegant, modern Java web applications. It favors convention over configuration, is extensible using a plugin architecture, and ships with plugins to support <code> REST, AJAX and JSON. </code></p>
-      	</div>
+	
+	<div class="text-center mb-4">
+		<img class="mb-4" src="resources/img/Struts.png" alt="" width="256" height="86">
+		<h2 class="h3 mb-3 font-weight-normal">Struts</h2>
+		<p>Apache Struts is a free, open-source, <code> MVC framework </code> for creating elegant, modern Java web applications. It favors convention over configuration, is extensible using a plugin architecture, and ships with plugins to support <code> REST, AJAX and JSON. </code></p>
+	</div>
       	
-      	<div class="mb-4" style="color: red">
-      		<s:property value="againMsg" />
-      	</div>
-
+	<div class="mb-4" style="color: red">
+		<s:property value="againMsg" />
+	</div>
+      	
+	<s:form class="form-signin" action="signIn" method="post">
       	<div class="form-label-group">
         	<input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email address" required autofocus>
         	<label for="inputEmail">Email address</label>

@@ -9,19 +9,20 @@ import org.apache.struts2.interceptor.SessionAware;
 
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
+import com.opensymphony.xwork2.ModelDriven;
 import com.opensymphony.xwork2.util.ValueStack;
 
 import manager.authentication.AuthenManager;
 import model.User;
 
-public class AuthenAction extends ActionSupport implements SessionAware {
+public class AuthenAction extends ActionSupport implements SessionAware, ModelDriven<User> {
 	
 	private static final long serialVersionUID = 1L;
 //	Date Type --------------------------------------------------
-	private User user;
+	private User user = new User();
 	private String email;
 	private String password;
-	private int counter;
+	private int counter = 0;
 	
 	SessionMap<String, Object> sessionmap;
 	
@@ -33,11 +34,11 @@ public class AuthenAction extends ActionSupport implements SessionAware {
 			Map<String, Object> context = new HashMap<String, Object>();
 			context.put("againMsg", new String("Counter!")); 
 			stack.push(context);
-			return INPUT;
+			return LOGIN;
 		}
 		
-		if((email == null && !"".equals(email)) || (password == null && !"".equals(password))){
-			return "again";
+		if((email == null || "".equals(email)) && (password == null || "".equals(password))){
+			return INPUT;
 		}
 		try{
 			// ดึงข้อมูลในฐานข้อมูล
@@ -51,7 +52,7 @@ public class AuthenAction extends ActionSupport implements SessionAware {
 				context.put("againMsg", new String("Invalid email or password. Try again.")); 
 				stack.push(context);
 				counter += 1 ;
-				return INPUT;
+				return LOGIN;
 			}
 			
 			// น้ำข้อมูลที่ได้ เอาไปใส่ไว้ใน Class User 
@@ -84,6 +85,11 @@ public class AuthenAction extends ActionSupport implements SessionAware {
 	}
 	public void setUser(User user) {
 		this.user = user;
+	}
+	
+	@Override
+	public User getModel() {
+		return user;
 	}
 
 	public String getEmail() {

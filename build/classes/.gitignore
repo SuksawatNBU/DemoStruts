@@ -1,9 +1,6 @@
 /action/
-/bean/
 /connection/
 /dao/
 /manager/
-/resource/
-/service/
-/struts.xml
 /model/
+/service/
