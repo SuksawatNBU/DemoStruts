@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN" "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="bundle"  extends="main">
+    
+    	<action name="page-bundle">
+            <result>/jsp/bundle/bundle.jsp</result>
+        </action>
+    
+        <action name="welcome" class="bundle.WelcomeAction">
+			<interceptor-ref name="defaultStack">
+				<param name="i18n.parameterName">appLocale</param>
+			</interceptor-ref>
+			<result name="success">/jsp/bundle/welcome.jsp</result>
+		</action>
+        
+    </package>
+</struts>

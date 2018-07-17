@@ -1,6 +1,10 @@
 /action/
+/bundle/
 /connection/
 /dao/
 /manager/
 /model/
+/processingform/
+/resources/
 /service/
+/struts.xml

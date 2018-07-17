@@ -19,18 +19,22 @@
 <body>
 
 	<div class="container" style="margin-top: 20px;">
-		<div class="alert alert-primary" role="alert">
-			<h2>ActionSupport class</h2>  
-			<s:form action="helloAction">
-				<div class="input-group mb-3">
-			  		<div class="input-group-prepend">
-			    	<span class="input-group-text">Name</span>
-			  		</div>
-			  		<input type="text" name="name" class="form-control">
-				</div>
-				<button type="submit" class="btn btn-primary" >Submit</button>
-			</s:form>
-		</div>
+		
+		<ul class="nav flex-column">
+		  <li class="nav-item">
+		    <a class="nav-link" href="<s:url namespace="/jsp" action="page-bundle" />">Bundle</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">Link</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" href="#">Link</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link disabled" href="#">Disabled</a>
+		  </li>
+		</ul>
+
 	</div>
 	
 </body>

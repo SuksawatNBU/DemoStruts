@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN" "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+	
+	<package name="main" extends="struts-default">
+		<interceptors>
+			<interceptor name = "myinterceptor" class = "action.test.MyInterceptor" />
+		</interceptors>
+	</package>
+		
+    <package name="page" namespace="/jsp" extends="main">
+    	<action name="page-home">
+            <result>/index.jsp</result>
+        </action>
+		<action name="page-login">
+            <result>/jsp/security/login.jsp</result>
+        </action>
+        <action name="page-register">
+            <result>/jsp/security/register.jsp</result>
+        </action>
+        <action name="page-bundle">
+            <result>/jsp/bundle/home.jsp</result>
+        </action>
+    </package>
+    
+    <include file="resources/strutsconfig/struts-authentication.xml" />
+    <include file="resources/strutsconfig/struts-bundle.xml" />
+</struts>

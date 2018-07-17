@@ -8,15 +8,13 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css">
+	<!-- CSS -->
+	<link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/bootstrap.min.css">
+	<!-- JavaScript -->
+	<script type="text/javascript" src="<%= request.getContextPath() %>/resources/js/jquery-3.3.1.slim.min.js"></script>
+	<script type="text/javascript" src="<%= request.getContextPath() %>/resources/js/popper.min.js"></script>
+	<script type="text/javascript" src="<%= request.getContextPath() %>/resources/js/bootstrap.min.js"></script>
 	
-	<!-- Optional JavaScript -->
-	<script src="<s:url value='resources/js/jquery-3.3.1.slim.min.js'/>" ></script>
-	<script src="<s:url value='resources/js/popper.min.js'/>" ></script>
-	<script src="<s:url value='resources/js/bootstrap.min.js'/>" ></script>
-	
-	<!-- Other -->
 	<decorator:head/>
 </head>
 
