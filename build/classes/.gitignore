@@ -2,6 +2,7 @@
 /bundle/
 /connection/
 /dao/
+/interceptor/
 /manager/
 /model/
 /processingform/

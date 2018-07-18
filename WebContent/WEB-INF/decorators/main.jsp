@@ -4,6 +4,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title><decorator:title></decorator:title></title>
+	
 	<!-- Required meta tags -->
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -45,8 +47,10 @@
 	  	</div>
 	</nav>
 	
-	<!-- Detail  -->
-	<decorator:body/>
+	<div class="container" style="margin-top: 20px;">
+		<!-- Detail  -->
+		<decorator:body/>
+	</div>
 	
 </body>
 </html>

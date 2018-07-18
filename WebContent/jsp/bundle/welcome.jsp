@@ -8,7 +8,6 @@
 <title></title>
 </head>
 <body>
-	<div class="container" style="margin-top: 20px;">
 	
 		<h4>s:property</h4>
 		<div class="alert alert-primary">
@@ -27,7 +26,6 @@
 				<s:text name="action.welcome.thankyou"></s:text>
 			</s:i18n>
 		</div>
-	</div>
 	
 </body>
 </html>

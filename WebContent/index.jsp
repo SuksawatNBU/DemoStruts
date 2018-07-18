@@ -4,15 +4,14 @@
 <html>
 <head>
 	<style type="text/css">
-		.input-group {
-			max-width: 500px;
-			min-width: 300px;
-		}
 		.container {
 			min-width: 300px;
 		}
-		.alert {
-			min-width: 300px;
+		a:link {
+			text-decoration: none;
+		}
+		.list-group-item:HOVER {
+			background-color: #f2f2f2;
 		}
 	</style>
 </head>
@@ -20,20 +19,14 @@
 
 	<div class="container" style="margin-top: 20px;">
 		
-		<ul class="nav flex-column">
-		  <li class="nav-item">
-		    <a class="nav-link" href="<s:url namespace="/jsp" action="page-bundle" />">Bundle</a>
-		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link" href="#">Link</a>
-		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link" href="#">Link</a>
-		  </li>
-		  <li class="nav-item">
-		    <a class="nav-link disabled" href="#">Disabled</a>
-		  </li>
-		</ul>
+		<h3>Struts 2 Tutorial</h3>
+		<div class="list-group">
+		  	<a class="list-group-item" href="<s:url action="page-interceptor" />">Interceptors</a>
+		  	<a class="list-group-item" href="<s:url action="page-bundle" />">Results - Result Types</a>
+		  	<a class="list-group-item" href="<s:url action="page-bundle" />">Value Stack/OGNL</a>
+		  	<a class="list-group-item" href="<s:url action="page-bundle" />">Localization, internationalization </a>
+		  	<a class="list-group-item" href="<s:url action="page-bundle" />">Bundle</a>
+		</div>
 
 	</div>
 	
