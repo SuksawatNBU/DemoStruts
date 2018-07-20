@@ -11,12 +11,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
 	<!-- CSS -->
-	<link rel="stylesheet" href="<%= request.getContextPath() %>lib/resources/webjars/bootstrap/4.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<%= request.getContextPath() %>/webjars/bootstrap/4.1.1/css/bootstrap.min.css">
 	
 	<!-- JavaScript -->
-	<script type="text/javascript" src="<%= request.getContextPath() %>/resources/js/jquery-3.3.1.slim.min.js"></script>
-	<script type="text/javascript" src="<%= request.getContextPath() %>/resources/js/popper.min.js"></script>
-	<script type="text/javascript" src="<%= request.getContextPath() %>/resources/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="<%= request.getContextPath() %>/webjars/jquery/3.0.0/jquery.min.js"></script>
+	<script type="text/javascript" src="<%= request.getContextPath() %>/webjars/popper.js/1.14.3/dist/umd/popper.js"></script>
+	<script type="text/javascript" src="<%= request.getContextPath() %>/webjars/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 	
 	<decorator:head/>
 </head>

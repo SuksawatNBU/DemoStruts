@@ -5,7 +5,11 @@
 	<title>Struts</title>	
 </head>
 <body>
-	<h2>Hello world</h2>
+	<h2>Struts Toturial</h2>
+	
+	<div class="list-group">
+		<a class="list-group-item" href="">First item</a>
+	</div>
 
 </body>
 </html>
