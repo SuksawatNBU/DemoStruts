@@ -5,9 +5,10 @@
 
 <struts>
 
-    <package name="basicstruts2" extends="struts-default">
-        <action name="index">
-            <result>/index.jsp</result>
+    <package name="truts2" extends="struts-default">
+    	<!-- Page -->
+        <action name="page-register">
+            <result>/jsp/formValidation/register.jsp</result>
         </action>
     </package>
 
