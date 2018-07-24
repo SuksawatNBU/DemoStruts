@@ -38,9 +38,9 @@
 	    	<ul class="navbar-nav navbar-right">
 	    		<li class="nav-item">
 	    			<div class="btn-group">
-	    				<a class="nav-link" href="<s:url action="page-register" />"><button type="button" class="btn btn-info">Sign up</button></a>
+	    				<a class="nav-link" href="<s:url action="page-register" />"><button type="button" class="btn btn-info">Sign Up</button></a>
 	    				<button type="button" class="btn btn-info disabled">or</button>
-	    				<a class="nav-link" href="<s:url action="page-login" />"><button type="button" class="btn btn-info">Sign in</button></a>
+	    				<a class="nav-link" href="<s:url action="page-login" />"><button type="button" class="btn btn-info">Sign In</button></a>
 	    			</div>
 	    			
 	    		</li>

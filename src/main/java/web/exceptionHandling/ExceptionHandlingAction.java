@@ -2,11 +2,12 @@ package web.exceptionHandling;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-public class HelloWorldAction extends ActionSupport {
+public class ExceptionHandlingAction extends ActionSupport{
 	
 	private static final long serialVersionUID = 1L;
 	private String name;
 
+	@SuppressWarnings("null")
 	public String execute(){
 		String x = null;
 		x = x.substring(0);

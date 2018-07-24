@@ -7,9 +7,9 @@
 </head>
 <body>
 	<h2>Struts Toturial</h2>
-	
 	<div class="list-group">
-		<a class="list-group-item" href="<s:url action="page-register"/>">First item</a>
+		<a class="list-group-item" href="<s:url action="page-ExceptionHandling"/>">Exception Handling</a>
+		<a class="list-group-item" href="<s:url action="page-FormValidation"/>">Form Validation</a>
 	</div>
 	
 </body>
