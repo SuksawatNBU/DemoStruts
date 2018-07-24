@@ -11,6 +11,6 @@
 	<div class="list-group">
 		<a class="list-group-item" href="<s:url action="page-register"/>">First item</a>
 	</div>
-
+	
 </body>
 </html>

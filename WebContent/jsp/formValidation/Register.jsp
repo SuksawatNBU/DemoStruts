@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>formValidation</title>
+	<title>FormValidation</title>
 </head>
 <body>
 
