@@ -17,7 +17,7 @@
 		<div align="center">404</div>
 	</div>
 	<hr>
-	<a class='btn' href='<s:url action="page-ExceptionHandling"/>'>Back To ExceptionHandling</a>
+	<a class='btn' href='<s:url action="page-exceptionHandling"/>'>Back To ExceptionHandling</a>
 	
         
 </body>

@@ -7,14 +7,14 @@
 
     <package name="truts2" extends="struts-default">
     	<!-- Page -->
-        <action name="page-FormValidation">
-            <result>/jsp/form_validation/FormValidation.jsp</result>
+        <action name="page-formValidation">
+            <result type="redirect">/jsp/form_validation/FormValidation.jsp</result>
         </action>
-        <action name="page-ExceptionHandling">
+        <action name="page-exceptionHandling">
             <result>/jsp/exception_handling/ExceptionHandling.jsp</result>
         </action>
     </package>
     
-    <include file="strutsconfig/exception_handling.xml"></include>
-	<include file="strutsconfig/form_validation.xml"></include>
+    <include file="strutsconfig/exception-handling.xml"></include>
+	<include file="strutsconfig/form-validation.xml"></include>
 </struts>
