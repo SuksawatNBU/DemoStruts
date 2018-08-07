@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+   
+<struts>
+   <package name ="employee" namespace="/jsp/exception_handling" extends = "struts-default">
+     
+      	<action name = "*ExceptionHandling" class = "struts.web.tutorial.employee.action.EmployeeAction" method = "{1}">
+         	<result name = "search">/jsp/employee/EmployeeSearch</result>
+      	</action>
+
+   </package>
+</struts>

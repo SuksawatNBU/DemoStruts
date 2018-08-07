@@ -6,10 +6,10 @@ public interface InterfaceAction {
 	public String init() throws Exception;
 	
 	// Load combo for search page
-//	public void getComboForSearch(CCTConnection conn) ;
+	public void getComboForSearch() ;
 	
 	// Load combo for add and edit page
-//	public void getComboForAddEdit(CCTConnection conn) ;
+	public void getComboForAddEdit() ;
 	
 	// To search
 	public String search() throws Exception;

@@ -5,16 +5,23 @@
 
 <struts>
 
-    <package name="truts2" extends="struts-default">
+    <package name="struts" extends="struts-default">
     	<!-- Page -->
+    	<action name="page-home">
+            <result type="redirect">index.jsp</result>
+        </action>
         <action name="page-formValidation">
             <result type="redirect">/jsp/form_validation/FormValidation.jsp</result>
         </action>
         <action name="page-exceptionHandling">
             <result>/jsp/exception_handling/ExceptionHandling.jsp</result>
         </action>
+        <action name="page-employee">
+            <result>/jsp/employee/EmployeeSearch.jsp</result>
+        </action>
     </package>
     
+    <include file="strutsconfig/common.xml"></include>
     <include file="strutsconfig/exception-handling.xml"></include>
 	<include file="strutsconfig/form-validation.xml"></include>
 </struts>

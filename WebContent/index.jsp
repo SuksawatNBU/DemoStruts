@@ -11,6 +11,13 @@
 		<a class="list-group-item" href="<s:url action="page-exceptionHandling"/>">Exception Handling</a>
 		<a class="list-group-item" href="<s:url action="page-formValidation"/>">Form Validation</a>
 	</div>
+	<br/>
+	
+	<h2>Report</h2>
+	<div class="list-group">
+		<a class="list-group-item" href="<s:url action="page-employee"/>">Exception Handling</a>
+	</div>
+	<br/>
 	
 </body>
 </html>

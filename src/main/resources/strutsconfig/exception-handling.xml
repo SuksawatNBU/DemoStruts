@@ -13,11 +13,11 @@
          	<exception-mapping exception = "java.lang.NullPointerException" result = "error" />
          	<exception-mapping exception = "java.lang.Exception" result = "error" />
       	</global-exception-mappings>
-      
+      	
    		<action name = "page-EH1">
    			<result>/jsp/exception_handling/EH1.jsp</result>
    		</action>
-     
+     	
       	<action name = "*ExceptionHandling" class = "struts.web.tutorial.exceptionHandling.action.ExceptionHandlingAction" method = "{1}">
          	<result name = "success">/jsp/exception_handling/ExceptionHandling.jsp</result>
       	</action>
