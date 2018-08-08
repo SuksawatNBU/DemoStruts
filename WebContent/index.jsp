@@ -15,7 +15,7 @@
 	
 	<h2>Report</h2>
 	<div class="list-group">
-		<a class="list-group-item" href="<s:url action="page-employee"/>">Exception Handling</a>
+		<a class="list-group-item" href="<s:url action="page-report"/>">Lab</a>
 	</div>
 	<br/>
 	

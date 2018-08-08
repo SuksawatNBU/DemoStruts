@@ -36,6 +36,8 @@ public class EmployeeAction extends CommonAction implements ModelDriven<Employee
 			EmployeeManager manager = new EmployeeManager();
 			List<EmployeeSearch> listResult = manager.search(getModel().getCriteria());
 			
+			System.out.println("listResult -->" + listResult);
+			
 		} catch (Exception e) {
 			
 		}
